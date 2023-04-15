@@ -1,24 +1,37 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Object Measurement App</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <h1>Object Measuring Application</h1>
+    <h2>By Sannidhi</h2>
     <canvas id="canvas"></canvas>
 
-    <!-- THREE.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- THREE.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <!-- jsfeat -->
-    <script src="https://inspirit.github.io/jsfeat/jsfeat.js"></script>
+<!-- jsfeat -->
+<script src="https://inspirit.github.io/jsfeat/jsfeat.js"></script>
 
-    <!-- cv.js -->
-    <script src="https://docs.opencv.org/master/opencv.js"></script>
+<!-- cv.js -->
+<script src="https://docs.opencv.org/master/opencv.js"></script>
 
-    <!-- ar.js -->
-    <script src="https://cdn.jsdelivr.net/npm/ar.js@2.0.8/build/ar.js"></script>
+<!-- ar.js -->
+<script src="https://cdn.jsdelivr.net/npm/ar.js@2.0.8/build/ar.js"></script>
 
-    <script type="module" src="index.js"></script>
+<script type="module" src="src/index.js"></script>
+
+<form>
+    <label for="imageInput">Select an image to upload:</label>
+    <input type="file" id="imageInput" name="imageInput">
+</form>
 </body>
 </html>
